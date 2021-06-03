@@ -6,7 +6,7 @@ app.get("/",(req, res)=>{
     res.send("apiandroidpalaran /kelurahan");    
 });
 
-app.get("kelurahan",function(reg,res){
+app.get("/kelurahan",function(reg,res){
     res.send(importData)
 });
 
