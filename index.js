@@ -2,7 +2,11 @@ const express = require("express");
 const app = express();
 const importData = require("./data.json");
 
-app.get("/",function(reg,res){
+app.get("/",(req, res)=>{
+    res.send("apiandroidpalaran /kelurahan");    
+});
+
+app.get("kelurahan",function(reg,res){
     res.send(importData)
 });
 
