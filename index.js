@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const importData = require("./data.json");
 
-app.get("/kelurahan",function(reg,res){
+app.get("/",function(reg,res){
     res.send(importData)
 });
 
